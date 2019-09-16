@@ -6,7 +6,7 @@ with open("README.md") as fp:
 
 
 setuptools.setup(
-    name="hello",
+    name="cdk-labs",
     version="0.0.1",
 
     description="A sample CDK Python app create VPC",

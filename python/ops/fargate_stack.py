@@ -8,8 +8,8 @@ from aws_cdk import (
 
 class FargateStack(core.Stack):
 
-    def __init__(self, vpcId: str, scope: core.Construct, id: str, **kwargs) -> None:
-        super().__init__(scope, id, *kwargs)
+    def __init__(self, scope: core.Construct, id: str, vpcId: str, **kwargs) -> None:
+        super().__init__(scope, id, **kwargs)
 
         # Create a cluster
         # vpc = ec2.Vpc(
@@ -18,8 +18,9 @@ class FargateStack(core.Stack):
         # )
 
         cluster = ecs.Cluster(
-            self, 'fargate-service-autoscaling',
-            vpc=vpcId
+            self, 
+            'fargate-service-autoscaling',
+            vpc=ec2.Vpc.from_lookup(self, 'Vpc', vpc_id=vpcId)
         )
 
         # Create Fargate Service
@@ -44,3 +45,17 @@ class FargateStack(core.Stack):
             self, "LoadBalancerDNS",
             value=fargate_service.load_balancer.load_balancer_dns_name
         )
+
+class CdkPyCrossStackFargateStack(core.Stack):
+    def __init__(self, scope: core.Construct, id: str, vpc: ec2.Vpc, **kwargs) -> None:
+        super().__init__(scope, id, **kwargs)
+
+        self.vpc = vpc
+
+        cluster = ecs.Cluster(self, 'Cluster', vpc=self.vpc)
+        svc = ecs_patterns.ApplicationLoadBalancedFargateService(
+            self, 'FargateService',
+            cluster=cluster,
+            image=ecs.ContainerImage.from_registry('nginx'))
+
+        core.CfnOutput(self, 'ServiceURL', value='http://{}/'.format(svc.load_balancer.load_balancer_full_name))
