@@ -23,6 +23,6 @@ vpcId = core.Fn.import_value("exportedId")
 #     env=AWS_ENV
 # )
 
-secFargate = CdkPyCrossStackFargateStack(app, "cdk-py-xstack-fargate-svc1",vpc=baseStack.vpc, env=AWS_ENV)
+secFargate = CdkPyCrossStackFargateStack(app, "fargate-nginx",vpc=baseStack.vpc, env=AWS_ENV)
 core.Tag.add(baseStack,'Name','demo')
 app.synth()

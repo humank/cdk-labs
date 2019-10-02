@@ -3,7 +3,7 @@
     "ClusterEB0386A7": {
       "Type": "AWS::ECS::Cluster",
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/Cluster/Resource"
+        "aws:cdk:path": "fargate-nginx/Cluster/Resource"
       }
     },
     "FargateServiceLBB353E155": {
@@ -32,13 +32,13 @@
         "Type": "application"
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/LB/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/LB/Resource"
       }
     },
     "FargateServiceLBSecurityGroup5F444C78": {
       "Type": "AWS::EC2::SecurityGroup",
       "Properties": {
-        "GroupDescription": "Automatically created Security Group for ELB cdkpyxstackfargatesvc1FargateServiceLB83AC8A7B",
+        "GroupDescription": "Automatically created Security Group for ELB fargatenginxFargateServiceLBCD7C7F9C",
         "SecurityGroupIngress": [
           {
             "CidrIp": "0.0.0.0/0",
@@ -53,10 +53,10 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/LB/SecurityGroup/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/LB/SecurityGroup/Resource"
       }
     },
-    "FargateServiceLBSecurityGrouptocdkpyxstackfargatesvc1FargateServiceSecurityGroup40EC2A31807A5AE3D4": {
+    "FargateServiceLBSecurityGrouptofargatenginxFargateServiceSecurityGroup144DABE0801D5ACD4D": {
       "Type": "AWS::EC2::SecurityGroupEgress",
       "Properties": {
         "GroupId": {
@@ -77,7 +77,7 @@
         "ToPort": 80
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/LB/SecurityGroup/to cdkpyxstackfargatesvc1FargateServiceSecurityGroup40EC2A31:80"
+        "aws:cdk:path": "fargate-nginx/FargateService/LB/SecurityGroup/to fargatenginxFargateServiceSecurityGroup144DABE0:80"
       }
     },
     "FargateServiceLBPublicListener4B4929CA": {
@@ -98,7 +98,7 @@
         "Protocol": "HTTP"
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/LB/PublicListener/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/LB/PublicListener/Resource"
       }
     },
     "FargateServiceLBPublicListenerECSGroupBE57E081": {
@@ -112,7 +112,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/LB/PublicListener/ECSGroup/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/LB/PublicListener/ECSGroup/Resource"
       }
     },
     "FargateServiceTaskDefTaskRole8CDCF85E": {
@@ -132,7 +132,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/TaskDef/TaskRole/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/TaskDef/TaskRole/Resource"
       }
     },
     "FargateServiceTaskDef940E3A80": {
@@ -149,7 +149,7 @@
                   "Ref": "FargateServiceTaskDefwebLogGroup71FAF541"
                 },
                 "awslogs-stream-prefix": "FargateService",
-                "awslogs-region": "unknown"
+                "awslogs-region": "us-west-2"
               }
             },
             "Name": "web",
@@ -168,7 +168,7 @@
             "Arn"
           ]
         },
-        "Family": "cdkpyxstackfargatesvc1FargateServiceTaskDefC473E95E",
+        "Family": "fargatenginxFargateServiceTaskDef846234B9",
         "Memory": "512",
         "NetworkMode": "awsvpc",
         "RequiresCompatibilities": [
@@ -182,7 +182,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/TaskDef/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/TaskDef/Resource"
       }
     },
     "FargateServiceTaskDefwebLogGroup71FAF541": {
@@ -190,7 +190,7 @@
       "UpdateReplacePolicy": "Retain",
       "DeletionPolicy": "Retain",
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/TaskDef/web/LogGroup/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/TaskDef/web/LogGroup/Resource"
       }
     },
     "FargateServiceTaskDefExecutionRole9194820E": {
@@ -210,7 +210,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/TaskDef/ExecutionRole/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/TaskDef/ExecutionRole/Resource"
       }
     },
     "FargateServiceTaskDefExecutionRoleDefaultPolicy827E7CA2": {
@@ -242,7 +242,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/TaskDef/ExecutionRole/DefaultPolicy/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/TaskDef/ExecutionRole/DefaultPolicy/Resource"
       }
     },
     "FargateServiceECC8084D": {
@@ -301,13 +301,13 @@
         "FargateServiceLBPublicListener4B4929CA"
       ],
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/Service/Service"
+        "aws:cdk:path": "fargate-nginx/FargateService/Service/Service"
       }
     },
     "FargateServiceSecurityGroup262B61DD": {
       "Type": "AWS::EC2::SecurityGroup",
       "Properties": {
-        "GroupDescription": "cdk-py-xstack-fargate-svc1/FargateService/Service/SecurityGroup",
+        "GroupDescription": "fargate-nginx/FargateService/Service/SecurityGroup",
         "SecurityGroupEgress": [
           {
             "CidrIp": "0.0.0.0/0",
@@ -320,10 +320,10 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/Service/SecurityGroup/Resource"
+        "aws:cdk:path": "fargate-nginx/FargateService/Service/SecurityGroup/Resource"
       }
     },
-    "FargateServiceSecurityGroupfromcdkpyxstackfargatesvc1FargateServiceLBSecurityGroup83FAA45F8024937BF2": {
+    "FargateServiceSecurityGroupfromfargatenginxFargateServiceLBSecurityGroup4F01F7458011E26483": {
       "Type": "AWS::EC2::SecurityGroupIngress",
       "Properties": {
         "IpProtocol": "tcp",
@@ -344,7 +344,7 @@
         "ToPort": 80
       },
       "Metadata": {
-        "aws:cdk:path": "cdk-py-xstack-fargate-svc1/FargateService/Service/SecurityGroup/from cdkpyxstackfargatesvc1FargateServiceLBSecurityGroup83FAA45F:80"
+        "aws:cdk:path": "fargate-nginx/FargateService/Service/SecurityGroup/from fargatenginxFargateServiceLBSecurityGroup4F01F745:80"
       }
     }
   },
