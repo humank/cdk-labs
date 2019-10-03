@@ -1,0 +1,409 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": [
+      {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      {
+        "id": "VpcStack",
+        "path": "VpcStack",
+        "children": [
+          {
+            "id": "Vpc",
+            "path": "VpcStack/Vpc",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "VpcStack/Vpc/Resource"
+              },
+              {
+                "id": "PublicSubnet1",
+                "path": "VpcStack/Vpc/PublicSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "VpcStack/Vpc/PublicSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "VpcStack/Vpc/PublicSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "VpcStack/Vpc/PublicSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "VpcStack/Vpc/PublicSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "VpcStack/Vpc/PublicSubnet1/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "VpcStack/Vpc/PublicSubnet1/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "VpcStack/Vpc/PublicSubnet1/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PublicSubnet2",
+                "path": "VpcStack/Vpc/PublicSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "VpcStack/Vpc/PublicSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "VpcStack/Vpc/PublicSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "VpcStack/Vpc/PublicSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "VpcStack/Vpc/PublicSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "VpcStack/Vpc/PublicSubnet2/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "VpcStack/Vpc/PublicSubnet2/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "VpcStack/Vpc/PublicSubnet2/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PublicSubnet3",
+                "path": "VpcStack/Vpc/PublicSubnet3",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "VpcStack/Vpc/PublicSubnet3/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "VpcStack/Vpc/PublicSubnet3/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "VpcStack/Vpc/PublicSubnet3/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "VpcStack/Vpc/PublicSubnet3/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "VpcStack/Vpc/PublicSubnet3/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "VpcStack/Vpc/PublicSubnet3/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "VpcStack/Vpc/PublicSubnet3/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet1",
+                "path": "VpcStack/Vpc/PrivateSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "VpcStack/Vpc/PrivateSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "VpcStack/Vpc/PrivateSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "VpcStack/Vpc/PrivateSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "VpcStack/Vpc/PrivateSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "VpcStack/Vpc/PrivateSubnet1/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet2",
+                "path": "VpcStack/Vpc/PrivateSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "VpcStack/Vpc/PrivateSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "VpcStack/Vpc/PrivateSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "VpcStack/Vpc/PrivateSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "VpcStack/Vpc/PrivateSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "VpcStack/Vpc/PrivateSubnet2/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet3",
+                "path": "VpcStack/Vpc/PrivateSubnet3",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "VpcStack/Vpc/PrivateSubnet3/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "VpcStack/Vpc/PrivateSubnet3/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "VpcStack/Vpc/PrivateSubnet3/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "VpcStack/Vpc/PrivateSubnet3/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "VpcStack/Vpc/PrivateSubnet3/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "IGW",
+                "path": "VpcStack/Vpc/IGW"
+              },
+              {
+                "id": "VPCGW",
+                "path": "VpcStack/Vpc/VPCGW"
+              }
+            ]
+          },
+          {
+            "id": "vpcId",
+            "path": "VpcStack/vpcId"
+          },
+          {
+            "id": "Exports",
+            "path": "VpcStack/Exports",
+            "children": [
+              {
+                "id": "Output{\"Ref\":\"VpcPublicSubnet1Subnet5C2D37C4\"}",
+                "path": "VpcStack/Exports/Output{\"Ref\":\"VpcPublicSubnet1Subnet5C2D37C4\"}"
+              },
+              {
+                "id": "Output{\"Ref\":\"VpcPublicSubnet2Subnet691E08A3\"}",
+                "path": "VpcStack/Exports/Output{\"Ref\":\"VpcPublicSubnet2Subnet691E08A3\"}"
+              },
+              {
+                "id": "Output{\"Ref\":\"VpcPublicSubnet3SubnetBE12F0B6\"}",
+                "path": "VpcStack/Exports/Output{\"Ref\":\"VpcPublicSubnet3SubnetBE12F0B6\"}"
+              },
+              {
+                "id": "Output{\"Ref\":\"Vpc8378EB38\"}",
+                "path": "VpcStack/Exports/Output{\"Ref\":\"Vpc8378EB38\"}"
+              },
+              {
+                "id": "Output{\"Ref\":\"VpcPrivateSubnet1Subnet536B997A\"}",
+                "path": "VpcStack/Exports/Output{\"Ref\":\"VpcPrivateSubnet1Subnet536B997A\"}"
+              },
+              {
+                "id": "Output{\"Ref\":\"VpcPrivateSubnet2Subnet3788AAA1\"}",
+                "path": "VpcStack/Exports/Output{\"Ref\":\"VpcPrivateSubnet2Subnet3788AAA1\"}"
+              },
+              {
+                "id": "Output{\"Ref\":\"VpcPrivateSubnet3SubnetF258B56E\"}",
+                "path": "VpcStack/Exports/Output{\"Ref\":\"VpcPrivateSubnet3SubnetF258B56E\"}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fargate-nginx",
+        "path": "fargate-nginx",
+        "children": [
+          {
+            "id": "Cluster",
+            "path": "fargate-nginx/Cluster",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "fargate-nginx/Cluster/Resource"
+              }
+            ]
+          },
+          {
+            "id": "FargateService",
+            "path": "fargate-nginx/FargateService",
+            "children": [
+              {
+                "id": "LB",
+                "path": "fargate-nginx/FargateService/LB",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "fargate-nginx/FargateService/LB/Resource"
+                  },
+                  {
+                    "id": "SecurityGroup",
+                    "path": "fargate-nginx/FargateService/LB/SecurityGroup",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "fargate-nginx/FargateService/LB/SecurityGroup/Resource"
+                      },
+                      {
+                        "id": "to fargatenginxFargateServiceSecurityGroup144DABE0:80",
+                        "path": "fargate-nginx/FargateService/LB/SecurityGroup/to fargatenginxFargateServiceSecurityGroup144DABE0:80"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "PublicListener",
+                    "path": "fargate-nginx/FargateService/LB/PublicListener",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "fargate-nginx/FargateService/LB/PublicListener/Resource"
+                      },
+                      {
+                        "id": "ECSGroup",
+                        "path": "fargate-nginx/FargateService/LB/PublicListener/ECSGroup",
+                        "children": [
+                          {
+                            "id": "Resource",
+                            "path": "fargate-nginx/FargateService/LB/PublicListener/ECSGroup/Resource"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "LoadBalancerDNS",
+                "path": "fargate-nginx/FargateService/LoadBalancerDNS"
+              },
+              {
+                "id": "TaskDef",
+                "path": "fargate-nginx/FargateService/TaskDef",
+                "children": [
+                  {
+                    "id": "TaskRole",
+                    "path": "fargate-nginx/FargateService/TaskDef/TaskRole",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "fargate-nginx/FargateService/TaskDef/TaskRole/Resource"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "Resource",
+                    "path": "fargate-nginx/FargateService/TaskDef/Resource"
+                  },
+                  {
+                    "id": "web",
+                    "path": "fargate-nginx/FargateService/TaskDef/web",
+                    "children": [
+                      {
+                        "id": "LogGroup",
+                        "path": "fargate-nginx/FargateService/TaskDef/web/LogGroup",
+                        "children": [
+                          {
+                            "id": "Resource",
+                            "path": "fargate-nginx/FargateService/TaskDef/web/LogGroup/Resource"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ExecutionRole",
+                    "path": "fargate-nginx/FargateService/TaskDef/ExecutionRole",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "fargate-nginx/FargateService/TaskDef/ExecutionRole/Resource"
+                      },
+                      {
+                        "id": "DefaultPolicy",
+                        "path": "fargate-nginx/FargateService/TaskDef/ExecutionRole/DefaultPolicy",
+                        "children": [
+                          {
+                            "id": "Resource",
+                            "path": "fargate-nginx/FargateService/TaskDef/ExecutionRole/DefaultPolicy/Resource"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "Service",
+                "path": "fargate-nginx/FargateService/Service",
+                "children": [
+                  {
+                    "id": "Service",
+                    "path": "fargate-nginx/FargateService/Service/Service"
+                  },
+                  {
+                    "id": "SecurityGroup",
+                    "path": "fargate-nginx/FargateService/Service/SecurityGroup",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "fargate-nginx/FargateService/Service/SecurityGroup/Resource"
+                      },
+                      {
+                        "id": "from fargatenginxFargateServiceLBSecurityGroup4F01F745:80",
+                        "path": "fargate-nginx/FargateService/Service/SecurityGroup/from fargatenginxFargateServiceLBSecurityGroup4F01F745:80"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ServiceURL",
+            "path": "fargate-nginx/ServiceURL"
+          }
+        ]
+      }
+    ]
+  }
+}
