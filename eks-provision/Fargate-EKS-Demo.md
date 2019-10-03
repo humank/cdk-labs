@@ -52,6 +52,17 @@ Dig +search my-service
 -----
 ## Tips to create ECS fargate by using fargatecli
 
+At first, you need to download and build it. 
+```
+git clone https://github.com/awslabs/fargatecli
+```
+
+Pre-request: Have a golang 1.13 on build machine, and run 
+
+```
+Make build
+```
+
 Create a VPC or using exist VPC to provision ECS fargate cluster.
 
 ```
